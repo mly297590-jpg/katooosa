@@ -39,7 +39,7 @@ function flashRainbowColors(callback) {
         if (callback) {
             callback();
         }
-    }, 20000); // Flash colors for 20 seconds
+    }, 2000); // Flash colors for 20 seconds
 }
 
 // Function to display the cat.gif initially
@@ -78,6 +78,7 @@ function displayCatHeart() {
     };
 }
 const yesAudio = new Audio('yes-sound.m4a');
+audio.loop = true;
 yesAudio.volume = 0.7; // optional
 
 
@@ -85,3 +86,4 @@ yesAudio.volume = 0.7; // optional
 
 // Display the cat.gif initially
 displayCat();
+
